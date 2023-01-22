@@ -1,6 +1,6 @@
 const express = require('express')
-const routes = require('./controllers');
 const exphbs = require('express-handlebars');
+const routes = require('./controllers');
 const app = express()
 const port = 3000
 
