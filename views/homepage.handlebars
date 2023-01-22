@@ -1,3 +1,14 @@
-<div>
-    This is Just a test
-</div>
+<!-- Loop over each object in the projects array -->
+{{#each blogs as |blog| }}
+    <div class="row mb-4 project">
+        <div class="col-md-5">
+            <h2><a href="/project/{{blog.id}}">{{blog.title}}</a></h2>
+            <p>Created by {{blog.user.name}} on {{format_date blog.date}}</p>
+        </div>
+        <div class="col-md-7">
+            <p>
+                {{blog.text}}
+            </p>
+        </div>
+    </div>
+{{/each}}
