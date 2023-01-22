@@ -1,8 +1,8 @@
-<!-- Loop over each object in the projects array -->
+<!-- Loop over each object in the blog array -->
 {{#each blogs as |blog| }}
     <div class="row mb-4 project">
         <div class="col-md-5">
-            <h2><a href="/project/{{blog.id}}">{{blog.title}}</a></h2>
+            <h2><a href="/blog/{{blog.id}}">{{blog.title}}</a></h2>
             <p>Created by {{blog.user.name}} on {{format_date blog.date}}</p>
         </div>
         <div class="col-md-7">
